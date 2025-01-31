@@ -1,4 +1,6 @@
-import { getLocalStorage, setLocalStorage } from './utils.mjs';
+import { getLocalStorage, setLocalStorage, updateCartCount } from './utils.mjs';
+
+
 
 function productDetailsTemplate(product) {
   return `<section class="product-details"> <h3>${product.Brand.Name}</h3>
@@ -21,6 +23,8 @@ function productDetailsTemplate(product) {
             </div>
           </section>`;
 }
+
+
 
 export default class ProductDetails {
 
@@ -60,4 +64,6 @@ export default class ProductDetails {
       );
     }
 }
+
+
   

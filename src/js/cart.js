@@ -19,7 +19,7 @@ function cartItemTemplate(item) {
   const newItem = `<li class="cart-card divider">
   <a href="#" class="cart-card__image" style="position: relative; display: block;">
     <img
-      src="${item.Images.PrimaryMedium}"
+      src="${item.Images.PrimaryLarge}"
       alt="${item.Name}"
       style="display: block; width: 100%;"
     />

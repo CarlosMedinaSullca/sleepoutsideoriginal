@@ -48,14 +48,29 @@ export function setClick(selector, callback) {
 // cart count
 
 export function updateCartCount(){
-  const cartCount = document.querySelector(".cart-count")
-  cartCount.innerHTML = ""
-  const count = getLocalStorage("so-cart").length
-  if (count>0){
+  const cartCount = document.querySelector(".cart-count");
+  cartCount.innerHTML = "";
+  let count = getLocalStorage("so-cart").length
+  if (count > 0){
     cartCount.innerHTML = count
   } else {
     cartCount.innerHTML = 0
   }
+
+  
+
+  // const cartCount = document.querySelector(".cart-count");
+  // if (cartCount) {
+  //   cartCount.innerHTML = "";
+  //   const count = getLocalStorage("so-cart").length;
+  //   if (count > 0) {
+  //     cartCount.innerHTML = count;
+  //   } else {
+  //     cartCount.innerHTML = 0;
+  //   }
+  // } else {
+  //   console.error("Element with class 'cart-count' not found.");
+  // }
 }
 
 export function renderWithTemplate(

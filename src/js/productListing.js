@@ -11,4 +11,4 @@ const listing = new ProductList(category, dataSource, element);
 
 listing.init();
 
-updateCartCount();
+
