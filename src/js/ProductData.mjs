@@ -12,8 +12,8 @@ export default class ProductData {
   constructor(category) {
 
   }
-  async getData(hammocks) {
-    const response = await fetch(baseURL + `products/search/${hammocks}`);
+  async getData(category) {
+    const response = await fetch(baseURL + `products/search/${category}`);
     const data = await convertToJson(response);
     console.log(data.Result);
     return data.Result;
